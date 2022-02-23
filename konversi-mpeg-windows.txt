@@ -1,0 +1,5 @@
+#!/bin/bash
+# positional argument
+ffmpeg -y -i  "nussa-kabbah.mp4" -f dvd -target pal-dvd -b:v 8000k -r 25 -vf scale=720:576 -ar 48000 -b:a 224k "nussa-kabbah.mpg"
+
+nussa-kabbah.mp4
